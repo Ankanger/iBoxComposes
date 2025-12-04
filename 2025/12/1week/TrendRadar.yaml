@@ -1,0 +1,11 @@
+# 创建目录结构
+mkdir -p trendradar/{config,docker}
+cd trendradar
+
+# 下载配置文件模板
+wget https://raw.githubusercontent.com/sansan0/TrendRadar/master/config/config.yaml -P config/
+wget https://raw.githubusercontent.com/sansan0/TrendRadar/master/config/frequency_words.txt -P config/
+
+# 下载 docker-compose 配置
+wget https://raw.githubusercontent.com/sansan0/TrendRadar/master/docker/.env
+wget https://raw.githubusercontent.com/sansan0/TrendRadar/master/docker/docker-compose.yml
